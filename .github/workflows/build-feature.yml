@@ -27,6 +27,6 @@ jobs: #Construir el ambiente
             - name: Run Tests
               run: |
                ng test --watch=false
-               ng build --prod
+               ng build
                echo "Tests Passed"
             
