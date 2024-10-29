@@ -12,12 +12,12 @@ jobs: #Construir el ambiente
               run: | 
                 echo "pulling and cheking out form git repository"
 
-                name: Setup Node.js 18
-                uses: actions/setup-node@v3
-                with:
-                  node-version: '18'
-                  cache: 'npm'
-              
+            - name: Setup Node.js 18
+              uses: actions/setup-node@v3
+              with:
+                node-version: '18'
+                cache: 'npm'
+            
             - name: Install Dependencies
               run: npm install
             
