@@ -5,7 +5,7 @@ on: #Eventos
             - feature/*
 jobs: #Construir el ambiente
     build-feature:
-        runs-on: ubuntu-latest
+        runs-on: windows-latest
         steps:
             - uses: actions/checkout@v4
             - name: pull and chekout form git repository
